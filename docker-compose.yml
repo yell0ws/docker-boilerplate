@@ -47,6 +47,7 @@ services:
       - ./docker/rabbitmq/dump:/var/lib/rabbitmq
     ports:
       - ${RABBITMQ_PORT}:5672
+      - ${RABBITMQ_UI_PORT}:15672
 
   phpmyadmin:
     container_name: ${PROJECT_NAME}-phpmyadmin
