@@ -1,0 +1,4 @@
+docker/*/dump
+*.DS_Store
+logs
+.env
