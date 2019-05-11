@@ -35,4 +35,4 @@ services:
       - ./docker/mysql/dump:/var/lib/mysql
       - ./docker/mysql/conf/my.cnf:/etc/mysql/my.cnf:ro
     ports:
-      - 3306:3306
+      - ${MYSQL_PORT}:3306
